@@ -62,6 +62,7 @@ oses:
 TIMEOUT <%= @host.params['loader_timeout'] || 10 %>
 DEFAULT <%= template_name %>
 
+############## This is a test ###########
 LABEL <%= template_name %>
   KERNEL <%= @kernel %>
   APPEND initrd=<%= @initrd %> ks=<%= foreman_url('provision') %> <%= pxe_kernel_options %> <%= ksoptions %>
